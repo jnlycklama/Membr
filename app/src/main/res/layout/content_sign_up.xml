@@ -15,13 +15,13 @@ android:layout_height="fill_parent"
 android:fillViewport="true">
 <RelativeLayout
     android:layout_width="fill_parent"
-    android:layout_height="wrap_content" android:background="#ffffff">
+    android:layout_height="wrap_content" android:background="#EFEFEF">
 
     <!--  Header  Starts-->
     <LinearLayout android:id="@+id/header"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="#CCFFCC"
+        android:background="#3F5765"
         android:paddingTop="5dip"
         android:paddingBottom="5dip"
         android:orientation="vertical" >
@@ -33,7 +33,7 @@ android:fillViewport="true">
             android:layout_marginLeft="20dip"
             android:text="@string/register_title"
             android:textSize="20dip"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:layout_gravity="left"/>
         <!-- Logo Start-->
         <!-- <ImageView android:src="@drawable/logo"
@@ -101,9 +101,11 @@ android:fillViewport="true">
             android:password="true"/>
         <!-- Login button -->
         <Button android:id="@+id/btnNext"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dip"
+            android:background="#BDD4DE"
+            android:layout_gravity="right"
             android:text="Next"/>
         <!-- Link to Registration Screen -->
         <!--<TextView android:id="@+id/link_to_register"
