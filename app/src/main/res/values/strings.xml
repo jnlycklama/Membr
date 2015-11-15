@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Membr</string>
     <string name="action_settings">Settings</string>
-    <string name="register_title">Join: The Sailing Team</string>
+    <string name="register_title">Joining: The Sailing Team</string>
     <string name="payment_option">The Sailing Team has a $40 membership fee. How would you like to pay?</string>
 
 <!-- TODO: Remove or change this placeholder text -->
