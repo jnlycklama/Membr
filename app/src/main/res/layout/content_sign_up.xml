@@ -25,16 +25,37 @@ android:fillViewport="true">
         android:paddingTop="5dip"
         android:paddingBottom="5dip"
         android:orientation="vertical" >
-        <TextView android:id="@+id/header_text"
+        <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:layout_marginBottom="20dip"
-            android:layout_marginLeft="20dip"
+            android:background="#3F5765"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dip"
+            android:src="@drawable/sailing_team"
+            />
+        <TextView android:id="@+id/header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="130dip"
+            android:paddingTop="30dip"
             android:text="@string/register_title"
-            android:textSize="20dip"
+            android:textSize="20sp"
             android:textColor="#FFFFFF"
             android:layout_gravity="left"/>
+            <Button android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="20dip"
+                android:background="#BDD4DE"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:text="Cancel"/>
+        </RelativeLayout>
         <!-- Logo Start-->
         <!-- <ImageView android:src="@drawable/logo"
             android:layout_width="wrap_content"
@@ -93,13 +114,17 @@ android:fillViewport="true">
         <TextView android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textColor="#372c24"
-            android:text="What is an exciting trip you'd like to go on?"/>
+            android:text="How much experience do you have with sailing?"/>
         <EditText android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dip"
             android:singleLine="true"
             android:password="true"/>
         <!-- Login button -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#372c24"
+            android:text="By joining this group you agree to: Recieve emails from the group, participate in events, follow our code of conduct at all times, a $20 registration fee, and to share your information with other members of the group."/>
         <Button android:id="@+id/btnNext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

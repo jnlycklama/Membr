@@ -16,8 +16,9 @@
     android:fillViewport="true">
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" android:background="#ffffff">
+        android:layout_height="wrap_content" android:background="#EFEFEF">
 
+        <!--  Header  Starts-->
         <LinearLayout android:id="@+id/header"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -25,16 +26,37 @@
             android:paddingTop="5dip"
             android:paddingBottom="5dip"
             android:orientation="vertical" >
-            <TextView android:id="@+id/header_text"
+            <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dip"
-                android:layout_marginBottom="20dip"
-                android:layout_marginLeft="20dip"
-                android:text="@string/register_title"
-                android:textSize="20dip"
-                android:textColor="#ffffff"
-                android:layout_gravity="left"/>
+                android:background="#3F5765"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:src="@drawable/sailing_team"
+                    />
+                <TextView android:id="@+id/header_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dip"
+                    android:paddingTop="30dip"
+                    android:text="@string/register_title"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="left"/>
+                <Button android:id="@+id/btnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="20dip"
+                    android:background="#BDD4DE"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:text="Cancel"/>
+            </RelativeLayout>
             <!-- Logo Start-->
             <!-- <ImageView android:src="@drawable/logo"
                 android:layout_width="wrap_content"
@@ -55,6 +77,7 @@
             <TextView android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:textColor="#372c24"
+                android:textSize="18sp"
                 android:text="@string/payment_option"
                 android:gravity="center"/>
             <Button android:id="@+id/btnCash"
@@ -85,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
                 android:text="Back"
-                android:background="#FF530D"/>
+                android:background="#BDD4DE"/>
         </LinearLayout>
 
     </RelativeLayout>
