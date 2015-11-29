@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jnlycklama.membr.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#EFEFEF">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#3F5765"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#3F5765"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:src="@drawable/sailing_team"
+                    />
+                <TextView android:id="@+id/header_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dip"
+                    android:paddingTop="30dip"
+                    android:text="@string/club_title"
+                    android:textSize="20sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="left"/>
+                <Button android:id="@+id/btnHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="20dip"
+                    android:background="#BDD4DE"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:text="Home"/>
+            </RelativeLayout>
+            <!-- Logo Start-->
+            <!-- <ImageView android:src="@drawable/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"/> -->
+            <!-- Logo Ends -->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:text="This app is the property of the four Queen's Students: Julie Lycklama, William Thompson, Cody Wheedon, and Chris Thomas."
+            android:id="@+id/disclaimer" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Created for CISC 325 as the final project."
+            android:id="@+id/disclaimer_two" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:gravity="center"
+            android:padding="5dp"
+            android:id="@+id/logout" />
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <!-- <LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@layout/footer_repeat"
+            android:layout_alignParentBottom="true">
+        </LinearLayout> -->
+        <!-- Footer Ends -->
+
+        <!--  Email Label -->
+
+        <!-- Login Form Ends -->
+
+    </LinearLayout>
+</ScrollView>
+
+
