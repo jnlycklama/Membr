@@ -57,7 +57,7 @@ public class EventListViewAdapter extends BaseAdapter{
 
         if(convertView == null){
 
-            convertView=inflater.inflate(R.layout.columns, null);
+            convertView=inflater.inflate(R.layout.event_columns, null);
 
             txtFirst=(TextView) convertView.findViewById(R.id.event_name);
             txtSecond=(TextView) convertView.findViewById(R.id.event_date);

@@ -38,6 +38,16 @@
                 android:textSize="20sp"
                 android:textColor="#FFFFFF"
                 android:layout_gravity="left"/>
+            <Button android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="145dip"
+                android:layout_marginTop="20dip"
+                android:background="#BDD4DE"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"
+                android:padding="10dip"
+                android:text="Home"/>
             <Button android:id="@+id/btnAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

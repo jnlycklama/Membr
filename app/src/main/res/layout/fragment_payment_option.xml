@@ -10,6 +10,9 @@
 </FrameLayout> -->
 
 <ScrollView
+    android:id="@+id/fragment_payment"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.jnlycklama.membr.PaymentOption"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -47,7 +50,7 @@
                     android:textSize="20sp"
                     android:textColor="#FFFFFF"
                     android:layout_gravity="left"/>
-                <Button android:id="@+id/btnCancel"
+                <Button android:id="@+id/btnCancelPayment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dip"
@@ -103,7 +106,7 @@
             android:gravity="left"
             android:layout_marginTop="40dip"
             android:layout_below="@id/select">
-            <Button android:id="@+id/btnBack"
+            <Button android:id="@+id/btnBackPayment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"

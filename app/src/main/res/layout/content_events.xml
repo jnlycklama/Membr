@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
+    android:id="@+id/activity_events"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fillViewport="true"
-    tools:context="com.example.jnlycklama.membr.MemberActivity">
+    tools:context="com.example.jnlycklama.membr.EventsActivity">
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" android:background="#EFEFEF">
@@ -38,7 +39,17 @@
                     android:textSize="20sp"
                     android:textColor="#FFFFFF"
                     android:layout_gravity="left"/>
-                <Button android:id="@+id/btnAdd"
+                <Button android:id="@+id/btnHomeEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="145dip"
+                    android:layout_marginTop="20dip"
+                    android:background="#BDD4DE"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dip"
+                    android:text="Home"/>
+                <Button android:id="@+id/btnAddEvents"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dip"
@@ -47,7 +58,7 @@
                     android:layout_gravity="right"
                     android:layout_alignParentRight="true"
                     android:padding="10dip"
-                    android:text="Add Member"/>
+                    android:text="Add Event"/>
             </RelativeLayout>
             <!-- Logo Start-->
             <!-- <ImageView android:src="@drawable/logo"

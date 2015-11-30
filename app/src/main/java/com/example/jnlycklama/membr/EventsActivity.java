@@ -1,15 +1,12 @@
 package com.example.jnlycklama.membr;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import static com.example.jnlycklama.membr.Constants.E_FIRST_COLUMN;
 import static com.example.jnlycklama.membr.Constants.E_SECOND_COLUMN;
@@ -17,7 +14,7 @@ import static com.example.jnlycklama.membr.Constants.E_THIRD_COLUMN;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class EventsFragment extends AppCompatActivity {
+public class EventsActivity extends AppCompatActivity {
 
 
 
@@ -26,7 +23,7 @@ public class EventsFragment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_events);
+        setContentView(R.layout.activity_events);
 
         ListView listView=(ListView)findViewById(R.id.event_list);
 
@@ -59,15 +56,22 @@ public class EventsFragment extends AppCompatActivity {
         EventListViewAdapter adapter=new EventListViewAdapter(this, list);
         listView.setAdapter(adapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener()
-        {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, final View view, int position, long id)
-            {
-                int pos=position+1;
+            public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
+                int pos = position + 1;
                 //do click stuff?
             }
 
+        });
+
+        Button btn2 = (Button)findViewById(R.id.btnHomeEvents);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EventsActivity.this, MainActivity.class));
+            }
         });
 
     }

@@ -1,5 +1,6 @@
 package com.example.jnlycklama.membr;
 
+import android.support.v4.app.FragmentTransaction;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,13 +14,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         Button btn = (Button)findViewById(R.id.btnMembers);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MemberActivity.class));
-                setContentView(R.layout.content_member);
             }
         });
 
@@ -28,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, EventsFragment.class));
-                setContentView(R.layout.fragment_events);
+                startActivity(new Intent(MainActivity.this, EventsActivity.class));
             }
         });
     }

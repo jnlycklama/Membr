@@ -46,7 +46,7 @@
                         android:textSize="20sp"
                         android:textColor="#FFFFFF"
                         android:layout_gravity="left"/>
-                    <Button android:id="@+id/btnCancel"
+                    <Button android:id="@+id/btnCancelCredit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="15dip"
@@ -140,7 +140,7 @@
 
             </LinearLayout>
             <!-- Login Form Ends -->
-            <Button android:id="@+id/btnNext"
+            <Button android:id="@+id/btnNextCredit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dip"
@@ -150,7 +150,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
                 android:text="Pay $20"/>
-            <Button android:id="@+id/btnBack"
+            <Button android:id="@+id/btnBackCredit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"

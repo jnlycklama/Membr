@@ -38,4 +38,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_credit">CreditActivity</string>
+    <string name="title_activity_cash">CashActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
 </resources>
