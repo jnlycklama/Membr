@@ -24,7 +24,37 @@ public class MemberActivity extends AppCompatActivity {
 
 
 
-    public static ArrayList<HashMap<String, String>> list;
+    public static ArrayList<HashMap<String, String>> list = new ArrayList<HashMap<String,String>>();
+
+    public static void makeArray() {
+        HashMap<String, String> temp = new HashMap<String, String>();
+        temp.put(FIRST_COLUMN, "Julie");
+        temp.put(SECOND_COLUMN, "Lycklama");
+        temp.put(THIRD_COLUMN, "julielycklama@gmail.com");
+        temp.put(FOURTH_COLUMN, "Details");
+        list.add(temp);
+
+        HashMap<String, String> temp2 = new HashMap<String, String>();
+        temp2.put(FIRST_COLUMN, "Chris");
+        temp2.put(SECOND_COLUMN, "Thomas");
+        temp2.put(THIRD_COLUMN, "cmt11@gmail.com");
+        temp2.put(FOURTH_COLUMN, "Details");
+        list.add(temp2);
+
+        HashMap<String, String> temp3 = new HashMap<String, String>();
+        temp3.put(FIRST_COLUMN, "Cody");
+        temp3.put(SECOND_COLUMN, "Weeden");
+        temp3.put(THIRD_COLUMN, "codyweeden@hotmail.com");
+        temp3.put(FOURTH_COLUMN, "Details");
+        list.add(temp3);
+
+        HashMap<String, String> temp4 = new HashMap<String, String>();
+        temp4.put(FIRST_COLUMN, "Will");
+        temp4.put(SECOND_COLUMN, "Thompson");
+        temp4.put(THIRD_COLUMN, "willthompson@yahoo.ca");
+        temp4.put(FOURTH_COLUMN, "Details");
+        list.add(temp4);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,35 +63,10 @@ public class MemberActivity extends AppCompatActivity {
 
         ListView listView=(ListView)findViewById(R.id.memb_list);
 
-        list=new ArrayList<HashMap<String,String>>();
+        if (list.isEmpty()){
+            makeArray();
+        }
 
-        HashMap<String,String> temp=new HashMap<String, String>();
-        temp.put(FIRST_COLUMN, "Julie");
-        temp.put(SECOND_COLUMN, "Lycklama");
-        temp.put(THIRD_COLUMN, "julielycklama@gmail.com");
-        temp.put(FOURTH_COLUMN, "Details");
-        list.add(temp);
-
-        HashMap<String,String> temp2=new HashMap<String, String>();
-        temp2.put(FIRST_COLUMN, "Chris");
-        temp2.put(SECOND_COLUMN, "Thomas");
-        temp2.put(THIRD_COLUMN, "cmt11@gmail.com");
-        temp2.put(FOURTH_COLUMN, "Details");
-        list.add(temp2);
-
-        HashMap<String,String> temp3=new HashMap<String, String>();
-        temp3.put(FIRST_COLUMN, "Cody");
-        temp3.put(SECOND_COLUMN, "Weeden");
-        temp3.put(THIRD_COLUMN, "codyweeden@hotmail.com");
-        temp3.put(FOURTH_COLUMN, "Details");
-        list.add(temp3);
-
-        HashMap<String,String> temp4=new HashMap<String, String>();
-        temp4.put(FIRST_COLUMN, "Will");
-        temp4.put(SECOND_COLUMN, "Thompson");
-        temp4.put(THIRD_COLUMN, "willthompson@yahoo.ca");
-        temp4.put(FOURTH_COLUMN, "Details");
-        list.add(temp4);
 
         ListViewAdapter adapter=new ListViewAdapter(this, list);
         listView.setAdapter(adapter);

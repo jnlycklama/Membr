@@ -32,6 +32,7 @@ import java.util.HashMap;
 
 public class SignUp extends AppCompatActivity implements PaymentOption.OnFragmentInteractionListener, CreditPay.OnFragmentInteractionListener, Welcome.OnFragmentInteractionListener{
 
+    public boolean flag = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,21 +119,9 @@ public class SignUp extends AppCompatActivity implements PaymentOption.OnFragmen
     public void addToList(String constant, String item){
         temp.put(constant, item);
 
-        if (constant.equals("FOURTH_COLUMN")){
+        if (constant.equals(FOURTH_COLUMN) && !flag){
             MemberActivity.list.add(temp);
-
-            ListView listView=(ListView)findViewById(R.id.memb_list);
-            ListViewAdapter adapter=new ListViewAdapter(this, MemberActivity.list);
-            listView.setAdapter(adapter);
-
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
-                    int pos = position + 1;
-                    Toast.makeText(SignUp.this, Integer.toString(pos) + " Clicked", Toast.LENGTH_SHORT).show();
-                }
-
-            });
+            flag = true;
         }
     }
 
