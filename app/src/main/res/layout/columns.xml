@@ -20,7 +20,7 @@
         android:id="@+id/email"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
-        android:layout_weight="0.5" />
+        android:layout_weight="1" />
 
     <Button android:id="@+id/details"
         android:layout_height="wrap_content"

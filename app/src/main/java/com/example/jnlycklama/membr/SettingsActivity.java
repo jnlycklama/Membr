@@ -24,6 +24,15 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(new Intent(SettingsActivity.this, LoginActivity.class));
             }
         });
+
+        Button btn2 = (Button)findViewById(R.id.btnHomeSettings);
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+            }
+        });
     }
 
 }
