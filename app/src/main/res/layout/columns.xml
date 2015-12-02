@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
 
     <TextView
         android:id="@+id/first_name"
@@ -20,13 +21,13 @@
         android:id="@+id/email"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1.5" />
 
     <Button android:id="@+id/details"
         android:layout_height="wrap_content"
         android:layout_width="0dp"
         android:layout_weight="0.5"
         android:background="#BDD4DE"
-        android:text="Details"/>
+        android:text="Details" />
 
 </LinearLayout>

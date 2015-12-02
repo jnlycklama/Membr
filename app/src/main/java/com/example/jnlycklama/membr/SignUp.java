@@ -24,6 +24,7 @@ import static com.example.jnlycklama.membr.Constants.FIRST_COLUMN;
 import static com.example.jnlycklama.membr.Constants.FOURTH_COLUMN;
 import static com.example.jnlycklama.membr.Constants.SECOND_COLUMN;
 import static com.example.jnlycklama.membr.Constants.THIRD_COLUMN;
+import static com.example.jnlycklama.membr.Constants.FIFTH_VAR;
 
 import com.example.jnlycklama.membr.PaymentOption;
 
@@ -32,6 +33,8 @@ import java.util.HashMap;
 
 public class SignUp extends AppCompatActivity implements PaymentOption.OnFragmentInteractionListener, CreditPay.OnFragmentInteractionListener, Welcome.OnFragmentInteractionListener{
 
+
+    public static String email_save;
     public boolean flag = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,8 @@ public class SignUp extends AppCompatActivity implements PaymentOption.OnFragmen
         setContentView(R.layout.content_sign_up);
 
         Button btn = (Button)findViewById(R.id.btnNextSignUp);
+
+        System.out.println("helloooo");
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +69,8 @@ public class SignUp extends AppCompatActivity implements PaymentOption.OnFragmen
                 System.out.println("The key pressed email is having code: " + keyCode);
                 System.out.println("The key pressed email is having event: " + event);
                 String email = email_text.getText().toString();
+                System.out.println("wait what");
+                email_save = email;
                 addToList(THIRD_COLUMN, email);
                 //showResults();
                 return false;
@@ -106,8 +113,9 @@ public class SignUp extends AppCompatActivity implements PaymentOption.OnFragmen
                 System.out.println("The key pressed experience is having code: "+keyCode);
                 System.out.println("The key pressed experience is having event: "+event);
                 //showResults();
+                System.out.println("boo pt2");
                 String experience = experience_text.getText().toString();
-                addToList(FOURTH_COLUMN, "Details");
+                addToList(FOURTH_COLUMN, experience);
                 return false;
             }
         });
@@ -117,11 +125,16 @@ public class SignUp extends AppCompatActivity implements PaymentOption.OnFragmen
     HashMap<String,String> temp=new HashMap<String, String>();
 
     public void addToList(String constant, String item){
-        temp.put(constant, item);
-
+        System.out.println("boo");
         if (constant.equals(FOURTH_COLUMN) && !flag){
+            temp.put(constant, "Details");
+            temp.put(FIFTH_VAR, item);
             MemberActivity.list.add(temp);
+            System.out.println("ummmmmm pt2");
             flag = true;
+        } else{
+            System.out.println("ummmmmm");
+            temp.put(constant, item);
         }
     }
 

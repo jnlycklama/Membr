@@ -105,8 +105,7 @@
                 <EditText android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dip"
-                    android:singleLine="true"
-                    android:password="true"/>
+                    android:singleLine="true" />
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:textColor="#372c24"
@@ -114,8 +113,7 @@
                 <EditText android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dip"
-                    android:singleLine="true"
-                    android:password="true"/>
+                    android:singleLine="true" />
                 <!-- Question field -->
                 <TextView android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -124,8 +122,7 @@
                 <EditText android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dip"
-                    android:singleLine="true"
-                    android:password="true"/>
+                    android:singleLine="true" />
                 <!-- Login button -->
                 <!-- Link to Registration Screen -->
                 <!--<TextView android:id="@+id/link_to_register"

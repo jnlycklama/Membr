@@ -6,8 +6,9 @@
         android:fillViewport="true"
         xmlns:tools="http://schemas.android.com/tools"
         tools:context="com.example.jnlycklama.membr.MainActivity">
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="fill_parent"
+            android:orientation="vertical"
             android:layout_height="wrap_content" android:background="#EFEFEF">
 
             <!--  Header  Starts-->
@@ -77,29 +78,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="106dp"
                 android:background="#BDD4DE"
-                android:layout_gravity="right"
-                android:text="Members"
-                android:layout_marginLeft="120dp"
-                android:layout_marginStart="120dp"
-                android:layout_below="@+id/header"
-                android:layout_toRightOf="@+id/btnEvents"
-                android:layout_toEndOf="@+id/btnEvents" />
+                android:layout_gravity="center"
+                android:text="Members" />
             <Button android:id="@+id/btnEvents"
                 android:layout_width="wrap_content"
                 android:textSize="35dp"
                 android:textAllCaps="false"
                 android:padding="10dip"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="265dp"
                 android:background="#BDD4DE"
-                android:layout_gravity="left"
+                android:layout_gravity="center"
                 android:text="Events"
-                android:layout_marginStart="265dp"
-                android:layout_alignTop="@+id/btnMembers"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_marginTop="136dp" />
 
-        </RelativeLayout>
+        </LinearLayout>
     </ScrollView>
 
 

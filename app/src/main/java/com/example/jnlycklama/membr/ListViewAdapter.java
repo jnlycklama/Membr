@@ -72,7 +72,7 @@ public class ListViewAdapter extends BaseAdapter{
         txtFirst.setText(map.get(FIRST_COLUMN));
         txtSecond.setText(map.get(SECOND_COLUMN));
         txtThird.setText(map.get(THIRD_COLUMN));
-        txtFourth.setText(map.get(FOURTH_COLUMN));
+        txtFourth.setText("Details");
 
         return convertView;
     }
